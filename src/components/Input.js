@@ -1,6 +1,6 @@
 import React from "react";
 
-const Input = () => {
+const Input = props => {
   return (
     <form className="container">
       <input className="input" name="orixe" type="text" placeholder="Orixe" />
@@ -10,7 +10,9 @@ const Input = () => {
         type="text"
         placeholder="Destino"
       />
-      <button className="button">Buscar</button>
+      <button className="button" onClick={props.onButtonClick}>
+        BUSCAR
+      </button>
     </form>
   );
 };
