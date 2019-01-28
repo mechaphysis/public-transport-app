@@ -2,7 +2,7 @@ import React from "react";
 
 const Results = () => {
   return (
-    <ul>
+    <ul className="container">
       <li>result list placeholder</li>
     </ul>
   );

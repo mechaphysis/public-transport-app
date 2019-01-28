@@ -2,7 +2,7 @@ import React from "react";
 
 const Input = () => {
   return (
-    <form>
+    <form className="container">
       <input className="input" name="orixe" type="text" placeholder="Orixe" />
       <input
         className="input"
