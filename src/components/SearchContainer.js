@@ -12,7 +12,7 @@ class SearchContainer extends Component {
   };
   render() {
     return (
-      <div className="description">
+      <div className="container">
         <h1 className="header">A que hora teño bus?</h1>
         <p className="paragraph">
           Atopa facilmente os horarios dos autobuses interurbanos de Galicia
