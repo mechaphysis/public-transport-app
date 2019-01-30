@@ -7,7 +7,7 @@ class SearchContainer extends Component {
     this.state = {
       departure: "",
       destination: "",
-      showResults: false
+      showResults: true
     };
 
     this.handleInputChange = this.handleInputChange.bind(this);

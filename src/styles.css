@@ -49,3 +49,7 @@ p {
   background-color: #4b6a46;
   font-weight: 500;
 }
+
+.tableRow {
+  text-align: center;
+}
