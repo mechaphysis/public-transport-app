@@ -53,16 +53,16 @@ class SearchContainer extends Component {
 
   render() {
     return (
-      <div className="container">
-        <h1 className="header">A que hora teño bus?</h1>
-        <p className="paragraph">
-          Atopa facilmente os horarios dos autobuses interurbanos de Galicia
+      <div className="center bg-light-gray br5 b--gray tc">
+        <h1 className="f1 lh-title">A que hora teño bus?</h1>
+        <p className="f4 lh-copy measure">
+          Atopa facilmente os horarios dos autobuses interurbanos de Galicia.
         </p>
-        <form className="container" onSubmit={this.handleSubmit}>
+        <form className="center" onSubmit={this.handleSubmit}>
           <label>
             Orixe:
             <input
-              className="input"
+              className="br-5"
               type="text"
               name="departure"
               value={this.state.departure}
@@ -81,7 +81,7 @@ class SearchContainer extends Component {
               placeholder="Vigo"
             />
           </label>
-          <input type="submit" value="BUSCAR" className="button" />
+          <input type="submit" value="BUSCAR" className="btn grow" />
         </form>
         {this.state.showResults && <Results />}
       </div>
