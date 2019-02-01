@@ -19,6 +19,7 @@ const Results = () => {
             <td className="pv2 ph3">04:00</td>
             <td className="pv2 ph3">05:00</td>
             <td className="pv2 ph3">06:00</td>
+
           </tr>
         </tbody>
       </table>
