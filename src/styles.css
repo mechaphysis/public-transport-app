@@ -1,12 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
-
+/*
 body {
   font-family: Roboto;
-  background-color: #3d5f71;
+  background-color: #c9d4db;
 }
 
 .App {
-  color: #3d5f71;
   font-size: 14 px;
   line-height: 20 px;
   display: flex;
@@ -22,17 +21,16 @@ body {
 }
 
 p {
-  margin-bottom: 10px;
   font-size: 15 px;
   line-height: 24 px;
 }
 
 .container {
   margin: auto;
-  padding: 20px;
+  padding: 24px;
+  background-color: #fff;
   border: 0 px solid #000;
   border-radius: 5 px;
-  background-color: #c9d4db;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
   display: flex;
   flex-wrap: wrap;
@@ -49,3 +47,12 @@ p {
   background-color: #4b6a46;
   font-weight: 500;
 }
+
+.tableHeader {
+  background-color: #000;
+}
+
+.tableRow {
+  text-align: center;
+}
+*/
