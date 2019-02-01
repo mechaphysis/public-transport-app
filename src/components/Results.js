@@ -2,50 +2,28 @@ import React from "react";
 
 const Results = () => {
   return (
-    <table>
-      <thead className="tableHeader">
-        <tr>
-          <th>Saída</th>
-          <th>Chegada</th>
-          <th>Empresa</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr className="tableRow">
-          <td>00:00</td>
-          <td>00:00</td>
-          <td>00:00</td>
-        </tr>
-      </tbody>
-    </table>
+    <div className="mt3">
+      <table className="collapse ba br2 b--black-10 pv2 ph3">
+        <tbody>
+          <tr className="striped--light-gray">
+            <th className="tr f6 ttu fw6 pv2 ph3">Saída</th>
+            <th className="tr f6 ttu fw6 pv2 ph3">Chegada</th>
+            <th className="tr f6 ttu fw6 pv2 ph3">Empresa</th>
+          </tr>
+          <tr className="striped--light-gray">
+            <td className="pv2 ph3">01:00</td>
+            <td className="pv2 ph3">02:00</td>
+            <td className="pv2 ph3">03:00</td>
+          </tr>
+          <tr className="striped--light-gray">
+            <td className="pv2 ph3">04:00</td>
+            <td className="pv2 ph3">05:00</td>
+            <td className="pv2 ph3">06:00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   );
 };
 
 export default Results;
-
-/*
-<table>
-  <thead>
-    <tr>
-      <th />
-      <th>ID</th>
-      <th>Name</th>
-    </tr>
-  </thead>
-  <tbody>
-    {
-      users.map((user) => {
-        return (
-          <TableRow
-            key={user.id}
-            id={user.id}
-            name={user.name}
-            selected={this.state.selected[user.id]}
-            handleSelect={this.handleSelect}
-          />;
-              );
-    })
-  }
-        </tbody>
-</table>
-*/

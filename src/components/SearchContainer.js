@@ -53,38 +53,52 @@ class SearchContainer extends Component {
 
   render() {
     return (
-      <div className="container">
-        <h1 className="header">A que hora teño bus?</h1>
-        <p className="paragraph">
-          Atopa facilmente os horarios dos autobuses interurbanos de Galicia
+      <main className="avenir pa4 black-80 measure center">
+        <h1 className="f2 lh-title fw3">A que hora teño bus?</h1>
+        <p className="f4 lh-copy measure">
+          Atopa facilmente os horarios dos autobuses interurbanos de Galicia.
         </p>
-        <form className="container" onSubmit={this.handleSubmit}>
-          <label>
-            Orixe:
+        <div className="">
+          <form className="measure center" onSubmit={this.handleSubmit}>
+            <fieldset className="ba b--transparent ph0 mh0">
+              <legend class="f4 fw6 ph0 mh0">Consúltao:</legend>
+
+              <div className="mt3">
+                <label className="db fw6 lh-copy f6">
+                  Orixe
+                  <input
+                    className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100"
+                    type="text"
+                    name="departure"
+                    value={this.state.departure}
+                    onChange={this.handleInputChange}
+                    placeholder="Ponteareas"
+                  />
+                </label>
+              </div>
+              <div className="mv3">
+                <label className="db fw6 lh-copy f6">
+                  Destino
+                  <input
+                    className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100"
+                    type="text"
+                    name="destination"
+                    value={this.state.destination}
+                    onChange={this.handleInputChange}
+                    placeholder="Vigo"
+                  />
+                </label>
+              </div>
+            </fieldset>
             <input
-              className="input"
-              type="text"
-              name="departure"
-              value={this.state.departure}
-              onChange={this.handleInputChange}
-              placeholder="Ponteareas"
+              type="submit"
+              value="BUSCAR"
+              className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib"
             />
-          </label>
-          <label>
-            Destino:
-            <input
-              className="input"
-              type="text"
-              name="destination"
-              value={this.state.destination}
-              onChange={this.handleInputChange}
-              placeholder="Vigo"
-            />
-          </label>
-          <input type="submit" value="BUSCAR" className="button" />
-        </form>
+          </form>
+        </div>
         {this.state.showResults && <Results />}
-      </div>
+      </main>
     );
   }
 }
