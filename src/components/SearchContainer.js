@@ -7,7 +7,7 @@ class SearchContainer extends Component {
     this.state = {
       departure: "",
       destination: "",
-      showResults: true
+      showResults: false
     };
 
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -67,7 +67,7 @@ class SearchContainer extends Component {
                 <label className="db fw6 lh-copy f6">
                   Orixe
                   <input
-                    className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100"
+                    className="pa2 input-reset ba bg-transparent hover-bg-light-gray hover-white w-100"
                     type="text"
                     name="departure"
                     value={this.state.departure}
@@ -80,7 +80,7 @@ class SearchContainer extends Component {
                 <label className="db fw6 lh-copy f6">
                   Destino
                   <input
-                    className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100"
+                    className="pa2 input-reset ba bg-transparent hover-bg-light-gray hover-white w-100"
                     type="text"
                     name="destination"
                     value={this.state.destination}
